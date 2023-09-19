@@ -14,7 +14,7 @@ class Grade:
             raise ValueError('Ocena musi zawierać się w przedziale 0-100')
         self._values[instance] = value
 
-class Egzamin:
+class EgzaminR:
     python_grade = Grade()
     algo_grade = Grade()
     math_grade = Grade()
