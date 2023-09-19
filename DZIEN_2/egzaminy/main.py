@@ -1,6 +1,7 @@
 from project import Project
 from egzamin import Exam
 from grade import Egzamin
+from weakrefer import EgzaminR
 
 print("_____ klasa Project _____")
 p1 = Project()
@@ -36,6 +37,28 @@ sexam = Egzamin()
 sexam.python_grade = 80
 sexam.algo_grade = 51
 sexam.math_grade = 56
+
+print(f'egzaminy: python {sexam.python_grade}, algotymy {sexam.algo_grade}, matematyka {sexam.math_grade}')
+
+print("wyniki pierwszego terminu z archiwum:")
+print(f'egzaminy: python {fexam.python_grade}, algotymy {fexam.algo_grade}, matematyka {fexam.math_grade}')
+
+
+print("_____ klasa Grade - EgzaminR _____")
+
+print("I termin R")
+fexam = EgzaminR()
+fexam.python_grade = 44
+fexam.algo_grade = 11
+fexam.math_grade = 44
+
+print(f'egzaminy: python {fexam.python_grade}, algotymy {fexam.algo_grade}, matematyka {fexam.math_grade}')
+
+print("II termin R")
+sexam = EgzaminR()
+sexam.python_grade = 73
+sexam.algo_grade = 60
+sexam.math_grade = 59
 
 print(f'egzaminy: python {sexam.python_grade}, algotymy {sexam.algo_grade}, matematyka {sexam.math_grade}')
 
