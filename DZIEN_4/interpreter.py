@@ -33,7 +33,7 @@ class Garage:
 class Aircondition:
         def __init__(self):
             self.is_on = False
-            
+
         def __str__(self):
             return 'on' if self.is_on else 'off'
 
@@ -60,3 +60,34 @@ class Heating:
     def turn_off(self):
         print('turning off the air heating')
         self.is_on = False
+
+
+class Boiler:
+    def __init__(self):
+        self.temperature = 47
+
+    def __str__(self):
+        return f'boiler temperature: {self.temperature} C'
+
+    def increase_temperature(self,amount):
+        print(f"increasing the boiler's temperature {amount} degrees")
+        self.temperature += amount
+
+    def decrease_temperature(self,amount):
+        print(f"decreasing the boiler's temperature {amount} degrees")
+        self.temperature -= amount
+        
+class Fridge:
+    def __init__(self):
+        self.temperature = 2
+
+    def __str__(self):
+        return f'fridge temperature: {self.temperature} C'
+
+    def increase_temperature(self,amount):
+        print(f"increasing the fidge's temperature {amount} degrees")
+        self.temperature += amount
+
+    def decrease_temperature(self,amount):
+        print(f"decreasing the fridge's temperature {amount} degrees")
+        self.temperature -= amount
